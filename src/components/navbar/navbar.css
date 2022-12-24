@@ -1,0 +1,177 @@
+@import url("https://fonts.googleapis.com/css2?family=La+Belle+Aurore&family=Martel:wght@400;600;700&family=Work+Sans:ital,wght@0,300;1,300&display=swap");
+.Restaurant--navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+}
+.Restaurant--navbar .Restaurant--navbar__logo {
+  font-family: "Martel", serif;
+  color: #fada82;
+  font-size: 2rem;
+  flex: 1;
+}
+.Restaurant--navbar .Restaurant--navbar__list {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  flex: 1;
+}
+.Restaurant--navbar .Restaurant--navbar__list li {
+  color: #fff;
+  font-family: "Work Sans", sans-serif;
+  list-style-type: none;
+  cursor: pointer;
+  font: 16px;
+  line-height: 24px;
+  font-weight: 500;
+}
+@media screen and (max-width: 1045px) {
+  .Restaurant--navbar .Restaurant--navbar__list {
+    display: none;
+  }
+}
+.Restaurant--navbar .Restaurant--navbar__buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 8px;
+  flex: 1;
+}
+.Restaurant--navbar .Restaurant--navbar__buttons .Restaurant--navbar__button--SignUp {
+  padding: 8px 14px;
+  border: none;
+  border: 1px solid #266568;
+  color: #fff;
+  border-radius: 12px;
+  font-family: "Work Sans", sans-serif;
+  line-height: 24px;
+  font-size: 15px;
+  font-weight: 600;
+  background-color: transparent;
+  cursor: pointer;
+  transition: all 0.45s;
+}
+.Restaurant--navbar .Restaurant--navbar__buttons .Restaurant--navbar__button--SignUp:hover {
+  background-color: #266568;
+}
+.Restaurant--navbar .Restaurant--navbar__buttons .Restaurant--navbar__button--Slash {
+  color: #fff;
+  font-size: 2rem;
+  font-family: "Work Sans", sans-serif;
+}
+.Restaurant--navbar .Restaurant--navbar__buttons .Restaurant--navbar__button--SignIn {
+  padding: 8px 14px;
+  border: none;
+  border: 1px solid #ff8a71;
+  color: #fff;
+  border-radius: 12px;
+  font-family: "Work Sans", sans-serif;
+  line-height: 24px;
+  font-size: 15px;
+  font-weight: 600;
+  background-color: transparent;
+  cursor: pointer;
+  transition: all 0.45s;
+}
+.Restaurant--navbar .Restaurant--navbar__buttons .Restaurant--navbar__button--SignIn:hover {
+  background-color: #ff8a71;
+}
+@media screen and (max-width: 1045px) {
+  .Restaurant--navbar .Restaurant--navbar__buttons {
+    display: none;
+  }
+}
+.Restaurant--navbar .Restaurant--navbar__Hamburger .iconMenu {
+  cursor: pointer;
+  color: white;
+}
+@media screen and (min-width: 1045px) {
+  .Restaurant--navbar .Restaurant--navbar__Hamburger {
+    display: none;
+  }
+}
+
+.Restaurant--navbar__MobileMenu {
+  display: flex;
+  flex-direction: column;
+  z-index: 1000;
+  background-color: #363636;
+  padding: 2rem;
+  gap: 1rem;
+}
+.Restaurant--navbar__MobileMenu ul {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  align-items: center;
+}
+.Restaurant--navbar__MobileMenu ul li {
+  color: #fff;
+  font-family: "Work Sans", sans-serif;
+  list-style-type: none;
+  cursor: pointer;
+  font: 18px;
+  line-height: 24px;
+  font-weight: 600;
+}
+.Restaurant--navbar__MobileMenu .Restaurant--navbar__buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  flex: 1;
+}
+.Restaurant--navbar__MobileMenu .Restaurant--navbar__buttons .Restaurant--navbar__button--SignUp {
+  padding: 8px 14px;
+  border: none;
+  border: 1px solid #266568;
+  color: #fff;
+  border-radius: 12px;
+  font-family: "Work Sans", sans-serif;
+  line-height: 24px;
+  font-size: 15px;
+  font-weight: 600;
+  background-color: transparent;
+  cursor: pointer;
+  transition: all 0.45s;
+}
+.Restaurant--navbar__MobileMenu .Restaurant--navbar__buttons .Restaurant--navbar__button--SignUp:hover {
+  background-color: #266568;
+}
+.Restaurant--navbar__MobileMenu .Restaurant--navbar__buttons .Restaurant--navbar__button--Slash {
+  color: #fff;
+  font-size: 2rem;
+  font-family: "Work Sans", sans-serif;
+}
+.Restaurant--navbar__MobileMenu .Restaurant--navbar__buttons .Restaurant--navbar__button--SignIn {
+  padding: 8px 14px;
+  border: none;
+  border: 1px solid #ff8a71;
+  color: #fff;
+  border-radius: 12px;
+  font-family: "Work Sans", sans-serif;
+  line-height: 24px;
+  font-size: 15px;
+  font-weight: 600;
+  background-color: transparent;
+  cursor: pointer;
+  transition: all 0.45s;
+}
+.Restaurant--navbar__MobileMenu .Restaurant--navbar__buttons .Restaurant--navbar__button--SignIn:hover {
+  background-color: #ff8a71;
+}
+@media screen and (min-width: 1045px) {
+  .Restaurant--navbar__MobileMenu {
+    display: none;
+  }
+}
+
+.expanded {
+  display: none;
+}/*# sourceMappingURL=navbar.css.map */

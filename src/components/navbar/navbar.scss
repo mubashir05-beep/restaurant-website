@@ -1,4 +1,172 @@
-$clr:red;
-div{
-      color:$clr;
+@import "../../index";
+
+.Restaurant--navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+  .Restaurant--navbar__logo {
+    font-family: $font-head;
+    color: $color-head;
+    font-size: 2rem;
+    flex: 1;
+  }
+  .Restaurant--navbar__list {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    flex: 1;
+    li {
+      color: $color-text;
+      font-family: $font-text;
+      list-style-type: none;
+      cursor: pointer;
+      font: 16px;
+      line-height: 24px;
+      font-weight: 500;
+    }
+    @media screen and (max-width: 1045px) {
+      display: none;
+    }
+  }
+  .Restaurant--navbar__buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 8px;
+    flex: 1;
+    .Restaurant--navbar__button--SignUp {
+      padding: 8px 14px;
+      border: none;
+      border: 1px solid $color-contrast;
+      color: $color-text;
+      border-radius: 12px;
+      font-family: $font-text;
+      line-height: 24px;
+      font-size: 15px;
+      font-weight: 600;
+      background-color: transparent;
+      cursor: pointer;
+      transition: all 0.45s;
+    }
+    .Restaurant--navbar__button--SignUp:hover {
+      background-color: $color-contrast;
+    }
+    .Restaurant--navbar__button--Slash {
+      color: $color-text;
+      font-size: 2rem;
+      font-family: $font-text;
+    }
+    .Restaurant--navbar__button--SignIn {
+      padding: 8px 14px;
+      border: none;
+      border: 1px solid $color-subtext;
+      color: $color-text;
+      border-radius: 12px;
+      font-family: $font-text;
+      line-height: 24px;
+      font-size: 15px;
+      font-weight: 600;
+      background-color: transparent;
+      cursor: pointer;
+      transition: all 0.45s;
+    }
+    .Restaurant--navbar__button--SignIn:hover {
+      background-color: $color-subtext;
+    }
+    @media screen and (max-width: 1045px) {
+      display: none;
+    }
+  }
+  .Restaurant--navbar__Hamburger {
+    .iconMenu {
+      cursor: pointer;
+      color: white;
+    }
+    @media screen and (min-width: 1045px) {
+      display: none;
+    }
+  }
+}
+
+.Restaurant--navbar__MobileMenu {
+  display: flex;
+  flex-direction: column;
+  z-index: 1000;
+  background-color: $color-footer;
+  padding: 2rem;
+  gap: 1rem;
+  ul {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    align-items: center;
+
+    li {
+      color: $color-text;
+      font-family: $font-text;
+      list-style-type: none;
+      cursor: pointer;
+      font: 18px;
+      line-height: 24px;
+      font-weight: 600;
+    }
+  }
+  .Restaurant--navbar__buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    flex: 1;
+    .Restaurant--navbar__button--SignUp {
+      padding: 8px 14px;
+      border: none;
+      border: 1px solid $color-contrast;
+      color: $color-text;
+      border-radius: 12px;
+      font-family: $font-text;
+      line-height: 24px;
+      font-size: 15px;
+      font-weight: 600;
+      background-color: transparent;
+      cursor: pointer;
+      transition: all 0.45s;
+    }
+    .Restaurant--navbar__button--SignUp:hover {
+      background-color: $color-contrast;
+    }
+    .Restaurant--navbar__button--Slash {
+      color: $color-text;
+      font-size: 2rem;
+      font-family: $font-text;
+    }
+    .Restaurant--navbar__button--SignIn {
+      padding: 8px 14px;
+      border: none;
+      border: 1px solid $color-subtext;
+      color: $color-text;
+      border-radius: 12px;
+      font-family: $font-text;
+      line-height: 24px;
+      font-size: 15px;
+      font-weight: 600;
+      background-color: transparent;
+      cursor: pointer;
+      transition: all 0.45s;
+    }
+    .Restaurant--navbar__button--SignIn:hover {
+      background-color: $color-subtext;
+    }
+  }
+  @media screen and (min-width: 1045px) {
+    display: none;
+  }
+}
+.expanded{
+    display: none;
 }
