@@ -1,30 +1,30 @@
-import React from 'react'
-import './navbar.scss'
+import React from "react";
+import "./navbar.scss";
 import { Icon } from "react-icons-kit";
-import { useState } from 'react'
+import { useState } from "react";
 import { x } from "react-icons-kit/feather/x";
 import { menu } from "react-icons-kit/feather/menu";
 
-const Bar= (props)=>{
-    return <li>{props.value}</li>
-}
+const Bar = (props) => {
+  return <li>{props.value}</li>;
+};
 
 const Navbar = () => {
-    const [toggleMenu, setToggleMenu] = useState(false);
-    let menu_Items = [
-      { id: 1, menu: "Home" },
-      { id: 2, menu: "Pages" },
-      { id: 3, menu: "Contact Us" },
-      { id: 4, menu: "Blog" },
-      { id: 5, menu: "Landing" },
-    ];
-    const handleToggle = ()=>{
-        setToggleMenu(!toggleMenu);
-    }
+  const [toggleMenu, setToggleMenu] = useState(false);
+  let menu_Items = [
+    { id: 1, menu: "Home" },
+    { id: 2, menu: "Pages" },
+    { id: 3, menu: "Contact Us" },
+    { id: 4, menu: "Blog" },
+    { id: 5, menu: "Landing" },
+  ];
+  const handleToggle = () => {
+    setToggleMenu(!toggleMenu);
+  };
   return (
     <>
       <div className="Restaurant--navbar">
-        <h3 className="Restaurant--navbar__logo">GERICHT</h3>
+        <h3 className="Restaurant--navbar__logo">Gerícht</h3>
         <ul className="Restaurant--navbar__list">
           {menu_Items.map((item) => (
             <Bar key={item.id} value={item.menu} />
@@ -47,7 +47,9 @@ const Navbar = () => {
           )}
         </div>
       </div>
-      <div className={toggleMenu ? "expanded":"Restaurant--navbar__MobileMenu"}>
+      <div
+        className={toggleMenu ? "expanded" : "Restaurant--navbar__MobileMenu"}
+      >
         <ul>
           {menu_Items.map((item) => (
             <Bar key={item.id} value={item.menu} />
@@ -65,7 +67,7 @@ const Navbar = () => {
       </div>
     </>
   );
-}
+};
 
-export default Navbar
+export default Navbar;
 // "Restaurant--navbar__MobileMenu"

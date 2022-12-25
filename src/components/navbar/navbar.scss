@@ -27,8 +27,12 @@
       font: 16px;
       line-height: 24px;
       font-weight: 500;
+      transition: all 0.35s;
     }
-    @media screen and (max-width: 1045px) {
+    li:hover{
+        color: $color-head;
+    }
+    @media screen and (max-width: 1045px){
       display: none;
     }
   }
@@ -98,6 +102,9 @@
   flex-direction: column;
   z-index: 1000;
   background-color: $color-footer;
+  box-shadow: 1px 0px 52px -18px rgba(0,0,0,0.79);
+-webkit-box-shadow: 1px 0px 52px -18px rgba(0,0,0,0.79);
+-moz-box-shadow: 1px 0px 52px -18px rgba(0,0,0,0.79);
   padding: 2rem;
   gap: 1rem;
   ul {
@@ -105,7 +112,6 @@
     flex-direction: column;
     gap: 18px;
     align-items: center;
-
     li {
       color: $color-text;
       font-family: $font-text;
@@ -114,6 +120,10 @@
       font: 18px;
       line-height: 24px;
       font-weight: 600;
+      transition: all 0.35s;
+    }
+    li:hover{
+        color: $color-head;
     }
   }
   .Restaurant--navbar__buttons {
@@ -167,6 +177,6 @@
     display: none;
   }
 }
-.expanded{
-    display: none;
+.expanded {
+  display: none;
 }

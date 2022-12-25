@@ -28,6 +28,10 @@
   font: 16px;
   line-height: 24px;
   font-weight: 500;
+  transition: all 0.35s;
+}
+.Restaurant--navbar .Restaurant--navbar__list li:hover {
+  color: #fada82;
 }
 @media screen and (max-width: 1045px) {
   .Restaurant--navbar .Restaurant--navbar__list {
@@ -101,6 +105,9 @@
   flex-direction: column;
   z-index: 1000;
   background-color: #363636;
+  box-shadow: 1px 0px 52px -18px rgba(0, 0, 0, 0.79);
+  -webkit-box-shadow: 1px 0px 52px -18px rgba(0, 0, 0, 0.79);
+  -moz-box-shadow: 1px 0px 52px -18px rgba(0, 0, 0, 0.79);
   padding: 2rem;
   gap: 1rem;
 }
@@ -118,6 +125,10 @@
   font: 18px;
   line-height: 24px;
   font-weight: 600;
+  transition: all 0.35s;
+}
+.Restaurant--navbar__MobileMenu ul li:hover {
+  color: #fada82;
 }
 .Restaurant--navbar__MobileMenu .Restaurant--navbar__buttons {
   display: flex;
