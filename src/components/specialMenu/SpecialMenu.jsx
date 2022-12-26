@@ -36,40 +36,40 @@ const SpecialMenu = () => {
     },
   ];
 
-let Cocktails = [
-  {
-    id: 1,
-    name: "Aperol Spritz",
-    ingredients: "Aperol | Villa Marchesi prosecco | soda | 30ml",
-    Price: "$20",
-  },
-  {
-    id: 2,
-    name: "Dark 'N 'Stormy",
-    ingredients: "Dark rum | Ginger beer | Slice of lime. ",
-    Price: "$16",
-  },
-  {
-    id: 3,
-    name: "Daiquiri",
-    ingredients: "Rum | Citrus juice | Sugar",
-    Price: "$10",
-  },
-  {
-    id: 4,
-    name: "Old Fashioned",
-    ingredients: "Bourbon | Brown sugar | Angostura Bitters",
-    Price: "$31",
-  },
-  {
-    id: 5,
-    name: "Negroni",
-    ingredients: "Gin | Sweet Vermouth | Campari | Orange garnish",
-    Price: "$26",
-  },
-];
+  let Cocktails = [
+    {
+      id: 1,
+      name: "Aperol Spritz",
+      ingredients: "Aperol | Villa Marchesi prosecco | soda | 30ml",
+      Price: "$20",
+    },
+    {
+      id: 2,
+      name: "Dark 'N 'Stormy",
+      ingredients: "Dark rum | Ginger beer | Slice of lime. ",
+      Price: "$16",
+    },
+    {
+      id: 3,
+      name: "Daiquiri",
+      ingredients: "Rum | Citrus juice | Sugar",
+      Price: "$10",
+    },
+    {
+      id: 4,
+      name: "Old Fashioned",
+      ingredients: "Bourbon | Brown sugar | Angostura Bitters",
+      Price: "$31",
+    },
+    {
+      id: 5,
+      name: "Negroni",
+      ingredients: "Gin | Sweet Vermouth | Campari | Orange garnish",
+      Price: "$26",
+    },
+  ];
   return (
-    <div className="Restaurant--Menu__Container">
+    <div className="Restaurant--Menu__Container" id="menu">
       <div className="Restaurant--Menu__Container--TopSection">
         <p className="TopSection__upperTagLine">Menu That Fits You Palatte</p>
         <img className="TopSection__spoon" src={spoon} alt="" />

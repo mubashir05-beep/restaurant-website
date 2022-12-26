@@ -1,7 +1,7 @@
-import React from 'react'
-import './header.scss'
-import headerWelcome from '../../assets/welcome.png'
-import spoonPNG from '../../assets/spoon.png'
+import React from "react";
+import "./header.scss";
+import headerWelcome from "../../assets/welcome.png";
+import spoonPNG from "../../assets/spoon.png";
 const Header = () => {
   return (
     <div className="Restaurant--Header__Container">
@@ -21,20 +21,22 @@ const Header = () => {
             volutpat morbi facilisis quam scelerisque sapien. Et, penatibus
             aliquam amet tellus.
           </p>
-        <button className='midText__btn'>Explore Menu</button>
+          <button className="midText__btn">
+            <a href="#menu"> Explore Menu</a>
+          </button>
         </div>
       </div>
       <div className="Restaurants-Header__right--Section">
         <img src={headerWelcome} alt="Welcome" srcset="" />
       </div>
       <div className="Restraurants-Header__right--Scroll">
-        <div className="scrollBar">
-        </div>
-      <p className="scrollText"><a href="#">Scroll</a></p>
+        <div className="scrollBar"></div>
+        <p className="scrollText">
+          <a href="#">Scroll</a>
+        </p>
       </div>
-
     </div>
   );
-}
+};
 
-export default Header
+export default Header;

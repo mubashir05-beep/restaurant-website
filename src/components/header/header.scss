@@ -2,7 +2,7 @@
 
 .Restaurant--Header__Container {
   display: flex;
-  
+
   flex-direction: row;
   margin: 4rem;
   align-items: center;
@@ -20,7 +20,7 @@
     flex-direction: column;
     justify-content: center;
   }
-   @media screen and (max-width: 550px) {
+  @media screen and (max-width: 550px) {
     margin: 4rem 2rem;
     padding: 0;
   }
@@ -83,9 +83,9 @@
           font-size: 90px;
           line-height: 130px;
         }
-         @media screen and (max-width: 480px) {
+        @media screen and (max-width: 480px) {
           font-size: 60px;
-          line-height:70px;
+          line-height: 70px;
         }
       }
       .midText__para {
@@ -104,12 +104,17 @@
         @media screen and (max-width: 1015px) {
           font-size: 16px;
         }
-         @media screen and (max-width: 480px) {
+        @media screen and (max-width: 480px) {
           font-size: 13px;
         }
       }
       .midText__btn {
         @include btn;
+        a{
+          text-decoration: none;
+          color: black;
+           transition: all 0.45s;
+        }
         @media screen and (max-width: 1330px) {
           padding: 0.7rem 1rem;
           width: 150px;
@@ -118,16 +123,20 @@
           padding: 1rem;
           width: 150px;
         }
-         @media screen and (max-width: 480px) {
+        @media screen and (max-width: 480px) {
           padding: 0.5rem;
           font-size: 14px;
           width: 100px;
         }
+         a:hover{
+        color: $color-head;
+      }
       }
       .midText__btn:hover {
         color: $color-head;
         background-color: black;
       }
+     
     }
   }
   .Restaurants-Header__right--Section {
@@ -138,7 +147,7 @@
       width: 100%;
     }
   }
-  .Restraurants-Header__right--Scroll{
+  .Restraurants-Header__right--Scroll {
     position: absolute;
     bottom: 2rem;
     right: 2rem;
@@ -146,22 +155,20 @@
     flex-direction: column;
     align-items: center;
     cursor: pointer;
-    .scrollBar{
+    .scrollBar {
       background-color: $color-head;
       height: 3rem;
       width: 3px;
     }
-    .scrollText{
+    .scrollText {
       color: $color-head;
       font-family: $font-tag__cursive;
-  a{
-    text-decoration: none;
-      color: $color-head;
-      font-family: $font-tag__cursive;
-      font-size: 1.5rem;
-  }
+      a {
+        text-decoration: none;
+        color: $color-head;
+        font-family: $font-tag__cursive;
+        font-size: 1.5rem;
+      }
     }
-
   }
-
 }
