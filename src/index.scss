@@ -26,3 +26,21 @@
   $color-contrast:#266568;
   $color-subtext: #ff8a71;
 
+  @mixin btn {
+    border: none;
+        background-color: $color-head;
+        padding: 1rem 2rem;
+        font-size: 18px;
+        font-weight: 600;
+        margin: 2rem 0;
+        color: black;
+        font-family: $font-tag__cursive;
+        width: 200px;
+        cursor: pointer;
+        transition: all 0.45s;
+          @media screen and (max-width:790px) {
+           font-size: 16px;
+            margin: 2rem 0 ;
+            width: 150px;
+ }
+  }

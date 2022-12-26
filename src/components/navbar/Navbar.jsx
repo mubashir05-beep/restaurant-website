@@ -6,17 +6,21 @@ import { x } from "react-icons-kit/feather/x";
 import { menu } from "react-icons-kit/feather/menu";
 
 const Bar = (props) => {
-  return <li>{props.value}</li>;
+  return (
+    <li>
+      <a href={props.name}>{props.value}</a>
+    </li>
+  );
 };
 
 const Navbar = () => {
   const [toggleMenu, setToggleMenu] = useState(false);
   let menu_Items = [
-    { id: 1, menu: "Home" },
-    { id: 2, menu: "Pages" },
-    { id: 3, menu: "Contact Us" },
-    { id: 4, menu: "Blog" },
-    { id: 5, menu: "Landing" },
+    { id: 1, menu: "Home", name: "#home" },
+    { id: 2, menu: "Pages", name: "#pages" },
+    { id: 3, menu: "Contact Us", name: "#contact" },
+    { id: 4, menu: "Blog", name: "#blog" },
+    { id: 5, menu: "Landing", name: "#landing" },
   ];
   const handleToggle = () => {
     setToggleMenu(!toggleMenu);
@@ -27,7 +31,7 @@ const Navbar = () => {
         <h3 className="Restaurant--navbar__logo">Gerícht</h3>
         <ul className="Restaurant--navbar__list">
           {menu_Items.map((item) => (
-            <Bar key={item.id} value={item.menu} />
+            <Bar key={item.id} value={item.menu} name={item.name}/>
           ))}
         </ul>
         <div className="Restaurant--navbar__buttons">

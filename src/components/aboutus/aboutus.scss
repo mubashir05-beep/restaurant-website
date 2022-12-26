@@ -1,0 +1,156 @@
+@import "../../index";
+
+@mixin styles__head {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+  h1 {
+    font-family: $font-tag__cursive;
+    color: $color-head;
+    font-size: 4rem;
+  }
+  img {
+    width: 40px;
+  }
+   @media screen and (max-width:690px) {
+    gap: 6px;
+      h1 {
+
+    font-size: 3rem;
+  }
+ }
+}
+@mixin paragraph {
+    max-width:300;
+color: $color-text;
+font-family: $font-text;
+font-size: 1rem;
+line-height: 1.5rem;
+  @media screen and (max-width:690px) {
+   max-width:350;
+ }
+}
+
+
+.Restaurant--About__Container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 6rem 4rem;
+  gap: 2rem;
+  padding: 4rem;
+  justify-content: space-evenly;
+   @media screen and (max-width:1145px) {
+    flex-direction: column;
+margin:4rem;
+      }
+       @media screen and (max-width:650px) {
+margin:0rem;
+      }
+       @media screen and (max-width:350px) {
+margin:0rem;
+padding: 2rem;
+      }
+  .Restaurant--About__Container--LeftSection {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    
+    .LeftSection__HeadSection {
+    @include styles__head;
+    }
+    .para{
+        @include paragraph;
+    }
+   .knowBTN{ @include btn;
+   
+  }
+  .knowBTN:hover {
+        color: $color-head;
+        background-color: black;
+      }}
+ 
+      .Restaurant--About__Container--CenterSection{
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      
+      .G{
+        z-index: 0;
+        width: 250px;
+     position: absolute;
+     left: 42%;
+      }
+      .knife{
+        z-index: 10;
+          
+        height:600px ;
+      }
+       @media screen and (max-width:1090px) {
+
+       .knife{
+
+           position: relative;
+     left: 42%;
+      
+      }
+ }
+ @media screen and (max-width:1300px) {
+    .G{
+     left: 40%;
+      }
+ }
+  @media screen and (max-width:1180px) {
+    .G{
+     left: 38%;
+      }
+ }
+  @media screen and (max-width:890px) {
+    .G{
+     left: 36%;
+      }
+ }
+   @media screen and (max-width:690px) {
+    .knife{height: 400px;}
+    .G{
+        width: 200px;
+     left: 30%;
+      }
+ }
+   @media screen and (max-width:489px) {
+    .G{
+     left: 25%;
+      }
+ }
+   @media screen and (max-width:280px) {
+     .knife{height: 300px;}
+    .G{
+        width: 150px;
+     left: 18%;
+      }
+ }
+ 
+
+      }
+
+      .Restaurant--About__Container--RightSection{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    .RightSection__HeadSection{
+        @include styles__head;
+    }
+    .para{
+        @include paragraph;
+    }
+    .knowBTN{
+        @include btn;
+       
+        }
+         .knowBTN:hover {
+        color: $color-head;
+        background-color: black;
+      }
+  }
+}

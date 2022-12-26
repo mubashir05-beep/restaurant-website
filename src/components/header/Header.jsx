@@ -27,6 +27,12 @@ const Header = () => {
       <div className="Restaurants-Header__right--Section">
         <img src={headerWelcome} alt="Welcome" srcset="" />
       </div>
+      <div className="Restraurants-Header__right--Scroll">
+        <div className="scrollBar">
+        </div>
+      <p className="scrollText"><a href="#">Scroll</a></p>
+      </div>
+
     </div>
   );
 }

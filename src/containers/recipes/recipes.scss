@@ -1,0 +1,30 @@
+@import '../../index';
+.Recipes--Container{
+    display: flex;
+    flex-direction: column;
+    .Recipes__topSection{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 15px;
+      .name{
+        font-family: $font-tag__cursive;
+        color: $color-head;
+        width: 150px;
+      }
+      .price{
+        color: $color-text;
+        font-family: $font-head;
+      }
+        .line{
+            width: 6rem;
+            height: 1px;
+           
+           background-color: $color-head;
+        }
+    }
+    .ingredients{
+        color: $color-text;
+        font-family: $font-text;
+      }
+}
