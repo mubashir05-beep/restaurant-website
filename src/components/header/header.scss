@@ -1,0 +1,151 @@
+@import "../../index";
+
+.Restaurant--Header__Container {
+  display: flex;
+  
+  flex-direction: row;
+  margin: $margin_section;
+  align-items: center;
+  padding: $padding_section;
+  justify-content: space-evenly;
+  @media screen and (max-width: 1500px) {
+    margin: 6rem 0;
+    padding: 0 1rem;
+  }
+  @media screen and (max-width: 1350px) {
+    margin: 4rem 0;
+    padding: 0;
+  }
+  @media screen and (max-width: 1015px) {
+    flex-direction: column;
+    justify-content: center;
+  }
+   @media screen and (max-width: 550px) {
+    margin: 4rem 2rem;
+    padding: 0;
+  }
+  .Restaurants-Header__left--Section {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    flex: 0.5;
+    @media screen and (max-width: 1015px) {
+      justify-content: center;
+    }
+    .Restaurants-Header__left--Section__upper--sub__title {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      .Restaurants-Header__left--Section--sub__tag {
+        font-size: 24px;
+        line-height: 24px;
+        font-family: $font-tag__cursive;
+        color: $color-text;
+        font-weight: 400;
+        cursor: pointer;
+        transition: all 0.35s;
+        @media screen and (max-width: 1280px) {
+          font-size: 20px;
+          line-height: 20px;
+        }
+        @media screen and (max-width: 1015px) {
+          font-size: 24px;
+          line-height: 24px;
+        }
+        @media screen and (max-width: 480px) {
+          font-size: 18px;
+          line-height: 18px;
+        }
+      }
+      .Restaurants-Header__left--Section--sub__tag:hover {
+        color: $color-highlight;
+      }
+      img {
+        width: 40px;
+      }
+    }
+    .Restaurants-Header__left--Section__midText {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      .midText__heading {
+        font-family: $font-tag__cursive;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 90px;
+        line-height: 130px;
+        color: $color-head;
+        @media screen and (max-width: 1330px) {
+          font-size: 60px;
+          line-height: 90px;
+        }
+        @media screen and (max-width: 1015px) {
+          font-size: 90px;
+          line-height: 130px;
+        }
+         @media screen and (max-width: 480px) {
+          font-size: 60px;
+          line-height:70px;
+        }
+      }
+      .midText__para {
+        font-family: $font-text;
+        color: $color-text;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 175%;
+        max-width: 500px;
+
+        /* or 28px */
+        letter-spacing: 0.04em;
+        @media screen and (max-width: 1330px) {
+          font-size: 13px;
+        }
+        @media screen and (max-width: 1015px) {
+          font-size: 16px;
+        }
+         @media screen and (max-width: 480px) {
+          font-size: 13px;
+        }
+      }
+      .midText__btn {
+        border: none;
+        background-color: $color-head;
+        padding: 1rem 2rem;
+        font-size: 18px;
+        font-weight: 600;
+        margin: 2rem 0;
+        color: black;
+        font-family: $font-tag__cursive;
+        width: 200px;
+        cursor: pointer;
+        transition: all 0.45s;
+        @media screen and (max-width: 1330px) {
+          padding: 0.7rem 1rem;
+          width: 150px;
+        }
+        @media screen and (max-width: 1015px) {
+          padding: 1rem;
+          width: 150px;
+        }
+         @media screen and (max-width: 480px) {
+          padding: 0.5rem;
+          font-size: 14px;
+          width: 100px;
+        }
+      }
+      .midText__btn:hover {
+        color: $color-head;
+        background-color: black;
+      }
+    }
+  }
+  .Restaurants-Header__right--Section {
+    max-width: 30rem;
+    img {
+      flex: 1.5;
+      height: 100%;
+      width: 100%;
+    }
+  }
+}
