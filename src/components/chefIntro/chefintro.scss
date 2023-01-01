@@ -1,0 +1,118 @@
+@import '../../index';
+.Restaurant--ChefIntro__container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 5rem;
+    background-image: url('../../assets/bg.png');
+    background-size: cover;
+    @media screen and (max-width:1015px) {
+        flex-direction: column;
+         padding: 2rem;
+    }
+    .Restaurant--ChefIntro__container--leftSection{
+         flex: 0.75;
+
+        img{
+            width: 100%;
+         @media screen and (max-width:1015px) {
+       width: 500px;
+    }
+     @media screen and (max-width:705px) {
+       width: 400px;
+    }
+     @media screen and (max-width:450px) {
+       width: 300px;
+    }
+    @media screen and (max-width:380px) {
+      width: 250px;
+    }
+        }
+    }
+    .Restaurant--ChefIntro__container--rightSection{
+        flex: 1.25;
+        display:flex;
+        flex-direction: column;
+        padding: 4rem;
+        gap: 18px;
+         @media screen and (max-width:705px) {
+            padding: 2rem;
+            gap: 12px;
+    }
+        .rightSection--chefWord{
+            .words{
+                color: $color-text;
+                font-family: $font-tag__cursive;
+                line-height: 20px;
+                font-size: 18px;
+                
+            }
+        }
+        .rightSection--Heading{
+            color: $color-head;
+            font-family: $font-tag__cursive;
+            font-size: 62px;
+            line-height: 72px;
+            @media screen and (max-width:705px) {
+             line-height: 56px;
+             padding: 1rem 0;
+                font-size: 54px;
+    }
+     @media screen and (max-width:380px) {
+         line-height: 46px;
+             padding: 1rem 0;
+                font-size: 44px;
+    }
+     @media screen and (max-width:280px) {
+         line-height: 36px;
+             padding: 1rem 0;
+                font-size: 34px;
+    }
+        }
+        .rightSection--Para{
+            img{
+                height: 49px;
+                padding-right: 6px;
+                 @media screen and (max-width:605px) {
+             height: 39px;
+    }
+            }
+            word-break: break-all;
+            color: rgb(214, 214, 214);
+            font-family:$font-text;
+            font-size: 18px;
+            line-height: 24px;
+             @media screen and (max-width:605px) {
+             line-height: 22px;
+                font-size: 16px;
+    }
+        }
+        .rightSection--chefName{
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+            .names{
+                display: flex;
+                flex-direction: column;
+                gap: 8px;
+                h3{
+                    color: $color-head;
+                    font-family: $font-tag__cursive;
+                }
+                p{
+                     color: rgb(214, 214, 214);
+                    font-family: $font-text;
+                }
+            }
+            img{
+                width: 13rem;
+                 @media screen and (max-width:450px) {
+       width: 8rem;
+    }
+            }
+        }
+
+    }
+}
+
+

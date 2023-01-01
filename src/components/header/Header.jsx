@@ -21,9 +21,9 @@ const Header = () => {
             volutpat morbi facilisis quam scelerisque sapien. Et, penatibus
             aliquam amet tellus.
           </p>
-          <button className="midText__btn">
-            <a href="#menu"> Explore Menu</a>
-          </button>
+    
+            <a className="midText__btn" href="#menu"> Explore Menu</a>
+          
         </div>
       </div>
       <div className="Restaurants-Header__right--Section">

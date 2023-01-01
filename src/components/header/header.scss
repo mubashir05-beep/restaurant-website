@@ -110,9 +110,12 @@
       }
       .midText__btn {
         @include btn;
+        text-align: center;
+        text-decoration: none;
         a{
-          text-decoration: none;
+          
           color: black;
+          text-align: center;
            transition: all 0.45s;
         }
         @media screen and (max-width: 1330px) {

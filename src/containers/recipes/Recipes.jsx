@@ -1,6 +1,6 @@
-import React from 'react'
-import './recipes.scss';
-const Recipes = (props)=> {
+import React from "react";
+import "./recipes.scss";
+const Recipes = (props) => {
   return (
     <div className="Recipes--Container">
       <div className="Recipes__topSection">
@@ -11,6 +11,6 @@ const Recipes = (props)=> {
       <div className="ingredients">{props.desc}</div>
     </div>
   );
-}
+};
 
-export default Recipes
+export default Recipes;

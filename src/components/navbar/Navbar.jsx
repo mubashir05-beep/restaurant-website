@@ -31,7 +31,7 @@ const Navbar = () => {
         <h3 className="Restaurant--navbar__logo">Gerícht</h3>
         <ul className="Restaurant--navbar__list">
           {menu_Items.map((item) => (
-            <Bar key={item.id} value={item.menu} name={item.name}/>
+            <Bar key={item.id} value={item.menu} name={item.name} />
           ))}
         </ul>
         <div className="Restaurant--navbar__buttons">
