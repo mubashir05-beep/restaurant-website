@@ -18,3 +18,4 @@ Technologies & Techniques Used :
 Live : https://gericht-react-site.netlify.app
 
 OUTPUT/RESULTS : 
+![Screenshot 2023-01-02 at 07-50-24 React App(1)](https://user-images.githubusercontent.com/100374421/210254808-8ae6f97a-49ef-44df-ac84-2286f87af6ab.png)
