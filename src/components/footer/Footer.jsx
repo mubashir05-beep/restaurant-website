@@ -33,7 +33,10 @@ const Footer = () => {
               "The best way to find yourself is to lose yourself in the <br/> service
               of others.”
             </p>
-            <img src={spoon} alt="" srcset="" />
+            <div className="ll">
+ <img src={spoon} alt="" srcset="" />
+            </div>
+           
           </div>
         </div>
         <div className="right">
