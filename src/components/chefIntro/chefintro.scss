@@ -11,7 +11,7 @@
          padding: 2rem;
     }
     .Restaurant--ChefIntro__container--leftSection{
-         flex: 0.75;
+         flex: 1;
 
         img{
             width: 100%;
@@ -30,7 +30,7 @@
         }
     }
     .Restaurant--ChefIntro__container--rightSection{
-        flex: 1.25;
+        flex: 1;
         display:flex;
         flex-direction: column;
         padding: 4rem;

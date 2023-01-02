@@ -1,6 +1,13 @@
 import React from "react";
 import "./App.scss";
-import { Navbar, Header, AboutUs, SpecialMenu, ChefIntro } from "./components/import";
+import {
+  Navbar,
+  Header,
+  AboutUs,
+  SpecialMenu,
+  ChefIntro,
+  Laurels,
+} from "./components/import";
 function App() {
   return (
     <div className="App">
@@ -9,6 +16,7 @@ function App() {
       <AboutUs />
       <SpecialMenu />
       <ChefIntro />
+      <Laurels />
     </div>
   );
 }

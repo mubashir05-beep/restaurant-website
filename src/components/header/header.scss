@@ -2,7 +2,6 @@
 
 .Restaurant--Header__Container {
   display: flex;
-
   flex-direction: row;
   margin: 4rem;
   align-items: center;
@@ -158,6 +157,9 @@
     flex-direction: column;
     align-items: center;
     cursor: pointer;
+     @media screen and (max-width: 1830px) {
+          display: none;
+        }
     .scrollBar {
       background-color: $color-head;
       height: 3rem;

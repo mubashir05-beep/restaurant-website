@@ -36,19 +36,21 @@ line-height: 1.5rem;
   display: flex;
   flex-direction: row;
   align-items: center;
-  margin: 6rem 4rem;
+  padding: 6rem 4rem;
+   background-image: url('../../assets/bg.png');
+    background-size: cover;
   gap: 2rem;
-  padding: 4rem;
+
   justify-content: space-evenly;
    @media screen and (max-width:1145px) {
     flex-direction: column;
-margin:4rem;
+padding:4rem;
       }
        @media screen and (max-width:650px) {
-margin:0rem;
+padding: 2rem;
       }
        @media screen and (max-width:350px) {
-margin:0rem;
+
 padding: 2rem;
       }
   .Restaurant--About__Container--LeftSection {

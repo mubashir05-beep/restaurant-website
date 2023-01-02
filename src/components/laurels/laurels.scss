@@ -1,0 +1,70 @@
+@import "../../index";
+.Restaurant__Laurels--container{
+ display: flex;
+  justify-content: center;
+        align-items: center;
+         @media screen and (max-width:(1050px)) {
+    flex-direction: column;
+  }
+      
+    video{
+  object-fit: cover;
+  width: 100%;
+  height: 40rem;
+     opacity: 0.6;
+     flex: 1.2;
+     z-index: 10;
+  @media screen and (max-width:(890px)) {
+      height: 30rem;
+  }
+   
+    }
+    .Restaurant__Laurels--upperSection{
+      padding: 2rem;
+       flex: 0.8;
+      height: 40rem;
+      width: auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      z-index: 100;
+        @media screen and (max-width:(1010px)) {
+      
+        height: 30rem;
+  }
+        @media screen and (max-width:(890px)) {
+      height: 30rem;
+  }
+  
+     
+    h1{
+      color: $color-head;
+      font-family: $font-tag__cursive;
+      font-size: 60px;
+      line-height: 62px;
+      @media screen and (max-width:(490px)) {
+       font-size: 50px;
+      line-height: 52px;
+  }
+    }
+    .Desc{
+      color: rgb(202, 202, 202);
+      font-family: $font-text;
+      word-break: break-all;
+      line-height: 20px;
+      font-size:18px ;
+      padding: 2rem 0;
+       @media screen and (max-width:(490px)) {
+       font-size: 14px;
+      line-height: 16px;
+  }
+    }
+    img{
+      width: 12rem;
+       @media screen and (max-width:(490px)) {
+      width: 9rem;
+  }
+    }
+    }
+}
