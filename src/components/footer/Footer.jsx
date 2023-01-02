@@ -4,7 +4,7 @@ import logo from "../../assets/gericht.png";
 import spoon from '../../assets/spoon.png'
 const Footer = () => {
   return (
-    <div className="Restranant--Footer__container">
+    <div className="Restranant--Footer__container" id='newsletter'>
       <div className="Newsletter-upperSection">
         <div className="spoonContainer">
           <p>Newsletter</p>
@@ -13,7 +13,7 @@ const Footer = () => {
         <h1>Subscribe To Our Newsletter</h1>
         <p>And never miss latest Updates!</p>
         <div className="subscribe">
-          <input type="text" />
+          <input type="text" placeholder='Please Enter Your Email Address!'/>
           <button>Subscribe</button>
         </div>
       </div>

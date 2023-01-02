@@ -1,7 +1,7 @@
 import React from 'react'
 import './chefintro.scss'
 import cheffPNG from '../../assets/chef.png'
-import background from '../../assets/bg.png'
+
 import spoon from '../../assets/spoon.png'
 import quotes from '../../assets/quote.png'
 import cheffsign from '../../assets/sign.png'

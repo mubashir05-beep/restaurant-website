@@ -4,7 +4,7 @@ import spoon from '../../assets/spoon.png'
 import find from '../../assets/findus.png'
 const FindUs = () => {
   return (
-    <div className="Restranant--FindUs__container">
+    <div className="Restranant--FindUs__container" id='contact'>
       <div className="LeftSection">
         <div className="contactHead">
           <h5>Contact</h5>

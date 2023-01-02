@@ -13,9 +13,10 @@
     .Restaurant--InstagramSection__LeftSection{
         display: flex;
         flex-direction: column;
-        flex: 0.45;
+        flex: 0.4;
         padding: 1rem;
-        gap: 20px;
+        flex: 0.5;
+        gap: 15px;
          @media screen and (max-width:1560px) {
         padding: 4rem;
     }
@@ -56,7 +57,7 @@
     }
     .Restaurant--InstagramSection__RightSection{
         display: flex;
-        flex: 1.70;
+        flex: 1.0;
         flex-direction: row;
         align-items: center;
         justify-content: center;

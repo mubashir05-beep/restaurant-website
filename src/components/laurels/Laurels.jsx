@@ -10,7 +10,7 @@ const Laurels = () => {
     }, []);
 
   return (
-    <div className="Restaurant__Laurels--container">
+    <div className="Restaurant__Laurels--container" id='landing'>
       <video src={meal} ref={vidRef} muted autoPlay loop />
       <div className="Restaurant__Laurels--upperSection">
         <h1>Our Values</h1>

@@ -30,9 +30,9 @@ const Header = () => {
         <img src={headerWelcome} alt="Welcome" srcset="" />
       </div>
       <div className="Restraurants-Header__right--Scroll">
-        <div className="scrollBar"></div>
+
         <p className="scrollText">
-          <a href="#">Scroll</a>
+          <a href="#newsletter">Scroll Down</a>
         </p>
       </div>
     </div>

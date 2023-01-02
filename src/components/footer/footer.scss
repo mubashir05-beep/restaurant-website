@@ -80,6 +80,7 @@
         border: 1px solid $color-head;
         color: $color-text;
         font-family: $font-text;
+        padding-left:10px ;
         @media screen and (max-width:870px) {
             width: 300px;
         height: 40px;
@@ -187,7 +188,7 @@
         }
         .ll{
             img{
-                width: 45px;
+                width: 35px;
             }
         }
 

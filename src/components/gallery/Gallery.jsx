@@ -9,7 +9,7 @@ import { ImgContainer } from '../../containers/export'
 
 const Gallery = () => {
   return (
-    <div className="Restaurant--InstagramSection__container">
+    <div className="Restaurant--InstagramSection__container" id='blog'>
       <div className="Restaurant--InstagramSection__LeftSection">
         <div className="insta">
           <h5>Instagram</h5>

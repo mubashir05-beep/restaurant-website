@@ -14,7 +14,7 @@ const Bar = (props) => {
 };
 
 const Navbar = () => {
-  const [toggleMenu, setToggleMenu] = useState(false);
+  const [toggleMenu, setToggleMenu] = useState(true);
   let menu_Items = [
     { id: 1, menu: "Home", name: "#home" },
     { id: 2, menu: "Pages", name: "#pages" },
@@ -24,6 +24,7 @@ const Navbar = () => {
   ];
   const handleToggle = () => {
     setToggleMenu(!toggleMenu);
+
   };
   return (
     <>
