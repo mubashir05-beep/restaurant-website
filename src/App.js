@@ -7,6 +7,9 @@ import {
   SpecialMenu,
   ChefIntro,
   Laurels,
+  Gallery,
+  FindUs,
+  Footer
 } from "./components/import";
 function App() {
   return (
@@ -17,6 +20,9 @@ function App() {
       <SpecialMenu />
       <ChefIntro />
       <Laurels />
+      <Gallery />
+      <FindUs />
+      <Footer />
     </div>
   );
 }

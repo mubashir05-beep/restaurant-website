@@ -1,0 +1,230 @@
+@import "../../index";
+.Restranant--Footer__container {
+  display: flex;
+  flex-direction: column;
+  background-image: url("../../assets/bg.png");
+  background-size: cover;
+  align-items: center;
+  padding: 4rem;
+  @media screen and (max-width:510px) {
+    padding: 4rem 0;
+  }
+  
+  .Newsletter-upperSection {
+    padding: 4rem;
+    background-color: rgb(14, 14, 14);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @media screen and (max-width:620px) {
+           padding: 2rem 1rem;
+        }
+         @media screen and (max-width:430px) {
+           padding: 2rem 0;
+        }
+    .spoonContainer {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      p {
+        color: $color-text;
+        font-family: $font-tag__cursive;
+        font-size: 18px;
+        line-height: 20px;
+      }
+      img {
+        width: 35px;
+      }
+    }
+    h1 {
+      color: $color-head;
+      font-family: $font-tag__cursive;
+      font-size: 57px;
+      line-height: 60px;
+      padding: 2rem 0;
+       @media screen and (max-width:870px) {
+            font-size: 40px;
+      line-height: 50px;
+        }
+        @media screen and (max-width:510px) {
+            font-size: 30px;
+      line-height: 32px;
+        }
+          @media screen and (max-width:380px) {
+            font-size: 20px;
+      line-height: 22px;
+        }
+         @media screen and (max-width:270px) {
+                    font-size: 16px;
+      line-height: 18px;
+                        
+        }
+    }
+    p {
+      color: rgb(187, 187, 187);
+      font-size: 20px;
+      line-height: 25px;
+       @media screen and (max-width:510px) {
+            font-size: 16px;
+      line-height: 20px;
+        }
+    }
+    .subscribe {
+      display: flex;
+      flex-direction: row;
+      padding: 2rem ;
+      input {
+        width: 500px;
+        height: 40px;
+        background-color: rgb(14, 14, 14);
+        border: 1px solid $color-head;
+        color: $color-text;
+        font-family: $font-text;
+        @media screen and (max-width:870px) {
+            width: 300px;
+        height: 40px;
+        }
+         @media screen and (max-width:510px) {
+              width: 260px;
+        height: 30px;
+        }
+                 @media screen and (max-width:390px) {
+                      width: 150px;
+                         height: 30px;
+        }
+        @media screen and (max-width:330px) {
+                      width: 150px;
+                         height: 30px;
+                        
+        }
+        @media screen and (max-width:270px) {
+                      width: 100px;
+                         height: 30px;
+                        
+        }
+      }
+       @media screen and (max-width:330px) {
+                      padding: 2rem 0.5rem;
+                        
+        }
+      button {
+        border: none;
+        background-color: $color-head;
+        margin: 0 0.5rem;
+        font-size: 18px;
+        font-weight: 600;
+        height: 40px;
+        color: black;
+        font-family: $font-tag__cursive;
+        width: 200px;
+        cursor: pointer;
+        transition: all 0.45s;
+        @media screen and (max-width: 790px) {
+          font-size: 16px;
+          width: 150px;
+        }
+        @media screen and (max-width:510px) {
+              font-size: 14px;
+          width: 90px;
+          height: 30px;
+        }
+      }
+      button:hover {
+        color: $color-head;
+        background-color: black;
+      }
+    }
+  }
+ .Newsletter-downSection{
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+    text-align: center;
+   padding: 2rem;
+   flex-wrap: wrap;
+    justify-content: center;
+      @media screen and (max-width:710px) {
+    flex-direction: column;
+  }
+    .left{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex: 0.5;
+        margin-top: 3rem;
+        h4{
+            color: white;
+            font-family: $font-tag__cursive;
+            font-size: 22px;
+            padding: 1rem 0;
+        }
+
+        .address{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 15px;
+            p{
+                color: rgb(221, 221, 221);
+                font-family: $font-text;
+            }
+        }
+    }
+    .center{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+       margin-top: 3rem;
+        flex: 1;
+        img{
+            width: 250px;
+           
+        }
+        p{
+            text-align: center;
+              color: rgb(221, 221, 221);
+                font-family: $font-text;
+                font-size: 16px;
+        }
+
+    }
+    .right{
+         display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex: 0.5;
+        margin-top: 3rem;
+        h4{
+              color: white;
+            font-family: $font-tag__cursive;
+            font-size: 22px;
+            padding: 1rem ;
+        }
+        .address{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 15px;
+            p{
+                    color: rgb(221, 221, 221);
+                font-family: $font-text;
+            }
+            .section{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        p{
+                color: rgb(221, 221, 221);
+                font-family: $font-text;
+        }
+            }
+        }
+    }
+ }
+p{
+      text-align: center;
+              color: rgb(221, 221, 221);
+                font-family: $font-text;
+                font-size: 16px;
+}
+}
