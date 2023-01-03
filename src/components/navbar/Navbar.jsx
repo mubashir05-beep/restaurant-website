@@ -1,5 +1,6 @@
 import React from "react";
 import "./navbar.scss";
+import gericht from '../../assets/gericht.png';
 import { Icon } from "react-icons-kit";
 import { useState } from "react";
 import { x } from "react-icons-kit/feather/x";
@@ -29,7 +30,8 @@ const Navbar = () => {
   return (
     <>
       <div className="Restaurant--navbar">
-        <h3 className="Restaurant--navbar__logo">Gerícht</h3>
+        <div className="Restaurant--navbar__logo">
+        <img src={gericht} alt="" srcset="" /></div>
         <ul className="Restaurant--navbar__list">
           {menu_Items.map((item) => (
             <Bar key={item.id} value={item.menu} name={item.name} />
@@ -53,7 +55,7 @@ const Navbar = () => {
         </div>
       </div>
       <div
-        className={toggleMenu ? "expanded" : "Restaurant--navbar__MobileMenu"}
+        className={toggleMenu ? "expanded" : "Restaurant--navbar__MobileMenu animate__animated animate__backInUp"}
       >
         <ul>
           {menu_Items.map((item) => (

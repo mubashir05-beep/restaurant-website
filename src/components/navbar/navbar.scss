@@ -7,10 +7,10 @@
   align-items: center;
   padding: 2rem;
   .Restaurant--navbar__logo {
-    font-family: $font-head;
-    color: $color-head;
-    font-size: 2rem;
     flex: 1;
+    img{
+      width: 150px;
+    }
   }
   .Restaurant--navbar__list {
     display: flex;
