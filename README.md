@@ -1,4 +1,4 @@
-# GERICHT Restaurant
+# GERICHT RESTAURANT
 
 To Run Locally :
 
