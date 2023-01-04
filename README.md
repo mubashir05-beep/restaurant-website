@@ -1,3 +1,5 @@
+# GERICHT Restaurant
+
 To Run Locally :
 
     1)Clone the repo.
