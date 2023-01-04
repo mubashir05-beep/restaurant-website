@@ -22,6 +22,4 @@ Live : https://gericht-react-site.netlify.app
 
 OUTPUT/RESULTS : 
 
-
-
-![Screenshot 2023-01-04 at 02-12-31 Gricht Restaurant](https://user-images.githubusercontent.com/100374421/210532778-9e419dbb-defc-40a8-8458-5015c449441f.png)
+![Screenshot 2023-01-04 at 04-33-53 Gricht Restaurant(1)](https://user-images.githubusercontent.com/100374421/210556346-71a8985a-5af4-437f-a976-8ad7ab344985.png)
